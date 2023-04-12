@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
 
 main {
@@ -50,6 +50,7 @@ input {
   flex: 3;
   padding: 1.25rem 2rem;
   font-size: 1.8rem;
+  outline: none;
 }
 
 button {
@@ -57,22 +58,21 @@ button {
   padding: 1.25rem;
   font-size: 1.8rem;
   font-weight: 600;
-  background-color: var(--dark-gray);
-  background-color: #343a40;
+  background-color: #e73c7e;
   color: #f8f9fa;
   letter-spacing: 1px;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #495057;
+  background-color: #e64985;
 }
 
 footer {
   font-size: 1.6rem;
   text-align: center;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .msg {
