@@ -18,12 +18,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 main {
   flex: 1;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 section {

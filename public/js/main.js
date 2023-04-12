@@ -2,6 +2,7 @@ const form = document.getElementById("generate");
 const picture = document.getElementById("picture");
 const inputBox = document.getElementById("prompt");
 const messageBox = document.querySelector(".msg");
+const spinner = document.querySelector(".spinner");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -20,6 +21,8 @@ form.addEventListener("submit", (e) => {
 
 const sendRequest = async function (prompt) {
   try {
+    spinner.classList.add("show");
+
     const response = await fetch("/generate", {
       method: "POST",
       headers: {
@@ -36,7 +39,10 @@ const sendRequest = async function (prompt) {
     const { url } = data;
 
     picture.src = url;
+
+    spinner.classList.remove("show");
   } catch (error) {
     messageBox.textContent = error;
+    spinner.classList.remove("show");
   }
 };
