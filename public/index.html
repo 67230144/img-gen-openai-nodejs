@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/main.js" defer></script>
     <title>Image generator</title>
   </head>
   <body>
     <main>
       <section>
-        <form>
+        <form id="generate">
           <div class="container">
-            <input type="text" placeholder="A cat with glasses" />
+            <input type="text" id="prompt" placeholder="A cat with glasses" />
             <button type="submit">Send</button>
           </div>
         </form>
       </section>
       <section>
-        <img src="" alt="" />
+        <p class="msg"></p>
+        <img src="" alt="" id="picture" />
       </section>
     </main>
     <footer>

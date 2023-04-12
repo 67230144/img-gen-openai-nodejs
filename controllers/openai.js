@@ -21,7 +21,7 @@ const generatePicture = async function (req, res) {
 
     res.status(200).json({
       success: true,
-      data: url,
+      url,
     });
   } catch (error) {
     if (error.response) {
@@ -33,7 +33,7 @@ const generatePicture = async function (req, res) {
 
     res.status(400).json({
       success: false,
-      error: "The image could not be generated",
+      error: "Could not be generated 😟",
     });
   }
 };
