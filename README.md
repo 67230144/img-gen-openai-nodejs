@@ -6,3 +6,5 @@ Was built using Node.js and Express.
 ## Live Demo
 
 https://img-gen-openai-nodejs.onrender.com/
+
+![Alt text](/public/img/screen.png?raw=true "Optional Title")
