@@ -80,6 +80,9 @@ footer {
 .msg {
   font-size: 2rem;
   text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .github-logo {
